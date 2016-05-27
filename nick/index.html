@@ -21,6 +21,14 @@
       height: 100%;
     }
 
+    #contact {
+      font-size: 60px;
+      font-weight: bolder;
+      padding-top: 20px;
+      margin: auto;
+      text-align: center;
+    }
+
     #star {
       background-image: url('../img/nmgav.png');
       width: 444px;
@@ -28,13 +36,23 @@
       margin: auto;
     }
 
+    @-webkit-keyframes wobble  {
+      0%  { -webkit-transform:  rotate(0deg); }
+      20%  { -webkit-transform:  rotate(5deg); }
+      50%  { -webkit-transform:  rotate(-5deg); }
+      100%  { -webkit-transform:  rotate(0deg); }
+    }
+
+    .wobble { -webkit-animation: wobble 2s infinite; }
+
   </style>
 </head>
 
 <body>
   <div id="background" class="pizza tiled">
-    <div id="star" class="centered">
-
+    <div id="star" class="centered wobble"></div>
+    <div id="contact">
+      <a href="mailto:nick@enjoythe.pizza">E-mail me!!!</a>
     </div>
   </div>
 </body>
