@@ -15,12 +15,21 @@
       padding: 0;
     }
 
+    @keyframes argh-my-eyes {
+      0%   { background-color: #FFD4E5; }
+      25%  { background-color: #D4FFEA; }
+      50%  { background-color: #EECBFF; }
+      75%  { background-color: #FEFFA3; }
+      100% { background-color: #DBDCFF; }
+    }
+
     body {
       /*background-image: url("../img/slice.png");
       background-repeat: repeat-y repeat-x;
         */
       width: 100%;
       height: 100%;
+      -webkit-animation: argh-my-eyes 2s infinite;
     }
 
     #contact {
